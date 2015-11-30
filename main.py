@@ -113,9 +113,21 @@ for sentence in root.iter('sentence'):
 outfile.write('</div>') # end_tag: <div class="col-sm-8">
 outfile.write('<div class="col-sm-4">')
 html_note = ("""<p>
-        <b>Note for view:</b> <br/> <br/>
+        <b>Note for view:</b></b> <br/> <br/>
         <span class="label label-info">Lexical units</span> of sentenceses. <br/>
         <span class="label label-warning">Frame elements</span> of sentenceses. <br/><br/><br/>
+		
+		<b>Usefule Links:</b>
+			<ul>
+				<li><a href="http://www.cs.cmu.edu/~ark/SEMAFOR/">
+				http://www.cs.cmu.edu/~ark/SEMAFOR/</a></li>
+				<li><a href="https://github.com/Noahs-ARK/semafor-semantic-parser">
+				https://github.com/Noahs-ARK/semafor-semantic-parser</a></li>
+				<li><a href="https://github.com/kenoboss/Semafor_Output_Viewer">
+				https://github.com/kenoboss/Semafor_Output_Viewer</a></li>
+				<li><a href="https://framenet.icsi.berkeley.edu/fndrupal/">
+				https://framenet.icsi.berkeley.edu/fndrupal/</a></li>
+			</ul>
         </p>""")
 outfile.write(html_note)
 outfile.write('</div>') # end_tag: <div class="col-sm-8">
@@ -133,4 +145,5 @@ outfile.close()
 
 print("Parsing End")
 print("_________________________________")
+
 
